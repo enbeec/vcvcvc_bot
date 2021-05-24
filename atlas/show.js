@@ -9,6 +9,7 @@ export const atlasShow = (args) => {
 		notes = `
 ${entry.notes}`;
 	}
+
 	return `${entry.name} is located at ${entry.x},${entry.y},${entry.z}
 	${notes || ""}
 	`;

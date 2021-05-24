@@ -1,6 +1,7 @@
 import { atlasInit, atlasDump } from "./atlas/data.js";
 import { atlasHelp, atlasAbout } from "./atlas/help.js";
 import { atlasShow } from "./atlas/show.js";
+import { atlasSearch } from "./atlas/search.js";
 import dotenv from "dotenv";
 import Discord from "discord.js";
 
@@ -27,12 +28,13 @@ const messageHandler = (message) => {
 				message.reply(atlasShow(args));
 				break;
 			case "search":
-				message.reply("atlas search not yet implemented");
+				message.reply("atlas search causes a lot of crashes so check on it later okii?");
+				//message.reply(atlasSearch(args));
 				break;
 			case "add":
 				message.reply("atlas add not yet implemented");
 				break;
-			case "del":
+			case "del"
 				message.reply("atlas del not yet implemented");
 				break;
 			case "dump":
